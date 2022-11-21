@@ -12,6 +12,7 @@
 .class{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     gap: 50px;
     margin-left: 30px;
     height: 100px;

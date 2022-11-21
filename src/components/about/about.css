@@ -19,6 +19,7 @@
 .us{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     margin-top: 70px;
 }
 .us h1{
