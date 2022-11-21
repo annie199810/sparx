@@ -9,6 +9,7 @@ import Web from "./components/web/web";
 import Block from "./components/block/block";
 import Class from "./components/reco/reco";
 import About from "./components/about/about";
+import Footer from "./components/footer/footer";
 function App() {
   return (
     <div>
@@ -21,6 +22,7 @@ function App() {
       <Block />
       <Class />
       <About />
+      <Footer />
     </div>
   );
 }
