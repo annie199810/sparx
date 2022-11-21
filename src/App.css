@@ -40,6 +40,79 @@
   color: white;
 }
 
+.brand {
+  width: 80px;
+  height: 50px;
+  background-repeat: no-repeat;
+  background-image: url(/src/assets/icons/amdoc.svg);
+  background-image: url(/src/assets/icons/bpl.svg);
+  animation-name: inherit;
+  animation-duration: 1s;
+}
+
+@keyframes example {
+  from {
+    background-image: url(/src/assets/icons/amdoc.svg);
+  }
+  to {
+    background-image: url(/src/assets/icons/bpl.svg);
+  }
+}
+
+/* @keyframes blink-animation {
+  to {
+    visibility: hidden;
+    background-image: url(/src/assets/icons/amdoc.svg);
+  }
+}
+
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+    background-image: url(/src/assets/icons/amdoc.svg);
+  }
+}
+
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+
+    background-image: url(/src/assets/icons/bpl.svg);
+  }
+}
+
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+
+    background-image: url(/src/assets/icons/bpl.svg);
+  }
+} */
+
+/* @keyframes mymove {
+  0% {
+    background-image: url(/src/assets/icons/amdoc.svg);
+  }
+  10% {
+    background-image: url(/src/assets/icons/bpl.svg);
+  }
+  20% {
+    background-image: url(/src/assets/icons/bpl.svg);
+  }
+  30% {
+    background-image: url(/src/assets/icons/bpl.svg);
+  }
+  10% {
+    background-image: url(/src/assets/icons/bpl.svg);
+  }
+  10% {
+    background-image: url(/src/assets/icons/bpl.svg);
+  }
+  10% {
+    background-image: url(/src/assets/icons/bpl.svg);
+  }
+} */
+
 /*services*/
 
 .services {
@@ -93,8 +166,21 @@
     "ecom blockchain design GDPR";
 }
 
+.side-grid {
+  gap: 20px;
+  display: grid;
+  grid-template-areas:
+    "data"
+    "sales"
+    "dev"
+    "GDPR";
+}
+
 .show-service-content > div {
-  border: 4px solid black;
+  border-left: thick solid black;
+  border-right: thin white;
+  border-top: thin white;
+  border-bottom: thick solid black;
 }
 
 .service-content {
@@ -154,6 +240,7 @@
 /*technologies*/
 
 .technologies {
+  font-size: small;
   float: left;
   overflow: hidden;
 }
@@ -199,7 +286,7 @@
   position: absolute;
   background-color: #f9f9f9;
   width: 850px;
-  height: 700px;
+  height: 600px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
   padding: 20px;
@@ -217,11 +304,19 @@
   padding: 10px;
 }
 .show-tech-content > div {
-  border: 4px solid black;
+  border-left: thick solid black;
+  border-right: thin white;
+  border-top: thin white;
+  border-bottom: thick solid black;
 }
 
 .show-tech-content a {
   text-decoration: underline;
+  text-decoration-color: gray;
+}
+
+.tech-content a:hover {
+  text-decoration-color: black;
 }
 
 .technologies:hover .tech-content {
@@ -231,6 +326,7 @@
 /*offshore*/
 
 .offshore {
+  font-size: small;
   float: left;
   overflow: hidden;
 }
@@ -265,21 +361,21 @@
 }
 .show-off-content {
   display: grid;
-  grid-template-columns:
-    auto auto
-    auto auto;
-  gap: 40px;
+  grid-template-areas:
+    "Hire-App Hire-Web Hire-JS offshore"
+    "Hire-Full Hire-Block AR UI";
+  gap: 20px;
   padding: 10px;
 }
 .off-content {
   display: none;
   position: absolute;
   background-color: #f9f9f9;
-  width: 550px;
-  height: 500px;
+  width: 700px;
+  height: 800px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
-  padding: 40px;
+  padding: 20px;
 }
 .off-content a {
   float: none;
@@ -291,22 +387,56 @@
 .off-content h4 {
   background-color: black;
   color: white;
-  padding: 10px;
+  padding: 15px;
 }
-.show-off-content a {
-  border: 2px solid black;
+.show-off-content > div {
+  border-left: thick solid black;
+  border-right: thin white;
+  border-top: thin white;
+  border-bottom: thick solid black;
+}
+
+.off-tech-content a {
+  text-decoration: underline;
+  text-decoration-color: gray;
 }
 
 .off-content a:hover {
-  background-color: #ddd;
+  text-decoration-color: black;
 }
 .offshore:hover .off-content {
   display: block;
 }
 
+.Hire-App {
+  grid-area: Hire-App;
+}
+.Hire-Web {
+  grid-area: Hire-Web;
+}
+.Hire-JS {
+  grid-area: Hire-JS;
+}
+.offshore {
+  grid-area: offshore;
+}
+.Hire-Full {
+  grid-area: Hire-Full;
+}
+.Hire-Block {
+  grid-area: Hire-Block;
+}
+.AR {
+  grid-area: AR;
+}
+.UI {
+  grid-area: UI;
+}
+
 /*insustries*/
 
 .industries {
+  font-size: small;
   float: left;
   overflow: hidden;
 }
@@ -344,7 +474,7 @@
   grid-template-columns:
     auto auto
     auto auto;
-  gap: 40px;
+  gap: 20px;
   padding: 10px;
 }
 .industries-content {
@@ -352,7 +482,7 @@
   position: absolute;
   background-color: #f9f9f9;
   width: 300px;
-  height: 300px;
+  height: 500px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
   padding: 40px;
@@ -369,8 +499,11 @@
   color: white;
   padding: 10px;
 }
-.show-industries-content a {
-  border: 2px solid black;
+.show-industries-content > div {
+  border-left: thick solid black;
+  border-right: thin white;
+  border-top: thin white;
+  border-bottom: thick solid black;
 }
 
 .industries-content a:hover {
@@ -383,6 +516,7 @@
 /* work */
 
 .work {
+  font-size: small;
   float: left;
   overflow: hidden;
 }
@@ -460,6 +594,7 @@
 /* who we are */
 
 .who-we-are {
+  font-size: small;
   float: left;
   overflow: hidden;
 }
@@ -505,10 +640,10 @@
   position: absolute;
   background-color: #f9f9f9;
   width: 300px;
-  height: 200px;
+  height: 250px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
-  padding: 40px;
+  padding: 20px;
 }
 .who-we-are-content a {
   float: none;
@@ -523,8 +658,11 @@
   color: white;
   padding: 10px;
 }
-.show-who-content a {
-  border: 2px solid black;
+.show-who-content > div {
+  border-left: thick solid black;
+  border-right: thin white;
+  border-top: thin white;
+  border-bottom: thick solid black;
 }
 
 .who-we-are-content a:hover {

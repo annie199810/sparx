@@ -1,5 +1,41 @@
 import React from "react";
+import { useEffect } from "react";
+// import amdoc from "../assets/icons/amdoc.svg";
+// import bpl from "../assets/icons/bpl.svg";
+// import bupa from "../assets/icons/bupa.svg";
+// import cairn from "../assets/icons/cairn.svg";
+// import circle from "../assets/icons/circle.svg";
+// import cleartrip from "../assets/icons/cleartrip.svg";
+// import dlink from "../assets/icons/dlink.svg";
+// import energy from "../assets/icons/energy.svg";
+// import hisense from "../assets/icons/hisence.svg";
+// import hp from "../assets/icons/hp.svg";
+// import huawei from "../assets/icons/huawei.svg";
+// import intel from "../assets/icons/intel.svg";
+// import motorola from "../assets/icons/motorola.svg";
+// import necco from "../assets/icons/necco.svg";
+// import suzuki from "../assets/icons/suzuki.svg";
+// import vedanta from "../assets/icons/vedanta.svg";
 
+// const icon = [
+//   amdoc,
+//   bpl,
+//   bupa,
+//   cairn,
+//   circle,
+//   cleartrip,
+//   dlink,
+//   energy,
+//   hisense,
+//   hp,
+//   huawei,
+//   intel,
+//   motorola,
+//   necco,
+//   suzuki,
+//   vedanta,
+// ];
+// const delay = 2500;
 const Head = () => {
   return (
     <div className="header">
@@ -13,7 +49,24 @@ const Head = () => {
         <p className="para">
           Over 500+ satisfied customers from SMB`s to Fortune 500 companies
         </p>
+        <div className="brand"></div>
 
+        {/* <div className="slideshow">
+          <div
+            className="slideshowSlider"
+            style={{ transform: `translate3d(${-index * 100}%, 0, 0)` }}
+          >
+            {icon.map((icon, index) => (
+              <div className="slide" key={index} style={{ icon }}></div>
+            ))}
+          </div>
+
+          <div className="slideshowDots">
+            {icon.map((_, idx) => (
+              <div key={idx} className="slideshowDot"></div>
+            ))}
+          </div>
+        </div> */}
         <div className="services">
           <button className="service-btn">Services</button>
           <div className="service-content">
@@ -45,27 +98,29 @@ const Head = () => {
                 <a href="#"> Startup Incubation Services</a>
                 <a href="#">Branding</a>
               </div>
-              <div className="data">
-                <h4>Data Intelligence</h4>
-              </div>
-              <div className="sales">
-                <h4>Salesforce Development</h4>
-              </div>
-              <div className="dev">
-                <h4>DevOps Automation</h4>
-              </div>
-              <div className="GDPR">
-                <h4>GDPR</h4>
+              <div className="side-grid">
+                <div className="data">
+                  <h4>Data Intelligence</h4>
+                </div>
+                <div className="sales">
+                  <h4>Salesforce Development</h4>
+                </div>
+                <div className="dev">
+                  <h4>DevOps Automation</h4>
+                </div>
+                <div className="GDPR">
+                  <h4>GDPR</h4>
+                </div>
               </div>
               <div className="ecom">
                 <h4>eCommerce Development</h4>
-                <p>eCommerce Web Development</p>
-                <p>eCommerce App development </p>
+                <a href="#">eCommerce Web Development</a>
+                <a href="#">eCommerce App development </a>
               </div>
               <div className="design">
                 <h4>Website Design & Development </h4>
-                <p>Web Design</p>
-                <p>Website Development</p>
+                <a href="#">Web Design</a>
+                <a href="#">Website Development</a>
               </div>
             </div>
           </div>
@@ -128,64 +183,64 @@ const Head = () => {
           <button className="off-btn">Offshore DS ®</button>
           <div className="off-content">
             <div className=" show-off-content">
-              <a href="#i111">
+              <div className="Hire-App">
                 <h4>Hire App Developer</h4>
-                <p>iOS </p>
-                <p>Android </p>
-                <p>App Developer</p>
-                <p>Swift</p>
-                <p>React Native</p>
-                <p>Flutter</p>
-                <p>PWA</p>
-              </a>
-              <a href="#i112">
+                <a href="#">iOS </a>
+                <a href="#"> Android </a>
+                <a href="#"> App Developer</a>
+                <a href="#"> Swift</a>
+                <a href="#"> React Native</a>
+                <a href="#">Flutter</a>
+                <a href="#"> PWA</a>
+              </div>
+              <div className="Hire-Web">
                 <h4>Hire Web Developer</h4>
-                <p>Shopify</p>
-                <p>WordPress</p>
-                <p>Magento</p>
-                <p>Prestashop</p>
-                <p>Drupal</p>
-                <p>web Developer</p>
-                <p>PHP</p>
-                <p>Python</p>
-              </a>
-              <a href="#i113">
+                <a href="#"> Shopify</a>
+                <a href="#"> WordPress</a>
+                <a href="#"> Magento</a>
+                <a href="#"> Prestashop</a>
+                <a href="#"> Drupal</a>
+                <a href="#"> Web Developer</a>
+                <a href="#"> PHP</a>
+                <a href="#"> Python</a>
+              </div>
+              <div className="Hire-JS">
                 <h4>Hire JS Developer</h4>
-                <p>Node JS</p>
-                <p>React JS</p>
-                <p>Angular JS</p>
-                <p>Javascript Developer</p>
-              </a>
-              <a href="#i114">
+                <a href="#"> Node JS </a>
+                <a href="#"> React JS </a>
+                <a href="#"> Angular JS </a>
+                <a href="#"> Javascript Developer</a>
+              </div>
+              <div className="offshore">
                 <h4>Offshore Development</h4>
-                <p>offshore Developer Service</p>
-                <p>Team Outsourcing</p>
-                <p>Staff Augmentation</p>
-                <p>Virtual CTO</p>
-                <p>Developer Cost Optimization</p>
-              </a>
-              <a href="#i115">
+                <a href="#"> offshore Developer Service</a>
+                <a href="#"> Team Outsourcing</a>
+                <a href="#"> Staff Augmentation</a>
+                <a href="#"> Virtual CTO</a>
+                <a href="#">Developer Cost Optimization</a>
+              </div>
+              <div className="Hire-Full">
                 <h4>Hire Full Stack Developer</h4>
-                <p>MERN</p>
-                <p>MEAN</p>
-                <p>Full Stack</p>
-              </a>
-              <a href="#i116">
+                <a href="#"> MERN </a>
+                <a href="#"> MEAN</a>
+                <a href="#"> Full Stack</a>
+              </div>
+              <div className="Hire-Block">
                 <h4>Hire Blockchain Developer</h4>
-                <p>Blockchain Developer</p>
-              </a>
-              <a href="#i117">
-                <p>AR Developers</p>
-                <p>VR Developers</p>
-                <p>ML Developers</p>
-                <p>Salesforce Developer</p>
-              </a>
-              <a href="#i118">
+                <a href="#">Blockchain Developer</a>
+              </div>
+              <div className="AR">
+                <a href="#"> AR Developers </a>
+                <a href="#"> VR Developers </a>
+                <a href="#"> ML Developers </a>
+                <a href="#"> Salesforce Developer </a>
+              </div>
+              <div className="UI">
                 <h4>Hire UI/UX Designer</h4>
-                <p>Hire Web Designer</p>
-                <p>Interface Designer</p>
-                <p>UI/UX Designer</p>
-              </a>
+                <a href="#"> Hire Web Designer </a>
+                <a href="#"> Interface Designer </a>
+                <a href="#"> UI/UX Designer </a>
+              </div>
             </div>
           </div>
         </div>
@@ -194,18 +249,18 @@ const Head = () => {
           <button className="industries-btn">Industries</button>
           <div className="industries-content">
             <div className=" show-industries-content">
-              <a href="#ind1">
-                <p>FinTech</p>
-                <p>Edtech </p>
-                <p>HealthCare </p>
-                <p>Logistics</p>
-                <p>ecommerce</p>
-                <p>Saas</p>
-                <p>Entertainment</p>
-                <p>Travel</p>
-                <p>Wellness</p>
-                <p>Social Media</p>
-              </a>
+              <div className="ind">
+                <a href="#"> FinTech</a>
+                <a href="#"> Edtech </a>
+                <a href="#"> HealthCare </a>
+                <a href="#"> Logistics</a>
+                <a href="#"> ecommerce</a>
+                <a href="#"> Saas</a>
+                <a href="#"> Entertainment</a>
+                <a href="#"> Travel</a>
+                <a href="#"> Wellness</a>
+                <a href="#"> Social Media</a>
+              </div>
             </div>
           </div>
         </div>
@@ -226,13 +281,13 @@ const Head = () => {
           <button className="who-we-are-btn">Who We Are</button>
           <div className="who-we-are-content">
             <div className=" show-who-content">
-              <a href="#who1">
-                <p>About</p>
-                <p>Founder </p>
-                <p>Blog </p>
-                <p>Carrer</p>
-                <p>Testimonals</p>
-              </a>
+              <div className="who">
+                <a href="#"> About</a>
+                <a href="#"> Founder </a>
+                <a href="#"> Blog </a>
+                <a href="#"> Carrer</a>
+                <a href="#"> Testimonals</a>
+              </div>
             </div>
           </div>
         </div>
