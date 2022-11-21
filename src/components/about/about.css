@@ -1,0 +1,60 @@
+@font-face{
+    font-family: "montserrat-Medium";
+    src: url(../assets/fonts/Montserrat-Medium.ttf);
+}
+*{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "montserrat-Medium";
+    font-weight: bold;
+} 
+.about {
+    height: 400px;
+    margin-top: 50px;
+    margin-left: 30px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.us{
+    display: flex;
+    flex-direction: row;
+    margin-top: 70px;
+}
+.us h1{
+    font-size: 30px;
+    margin-left: 40px;
+    font-weight: bold;
+}
+.us p {
+    margin-left: 40px;
+    color: #696b6e;
+    font-size:25px;
+    font-weight: 600;
+
+}
+.img{
+    width: 200px;
+    height: 200px;
+    margin-left: 30px;
+}
+.name h2{
+    font-size: 20px;
+    margin-left: 30px;
+    color: #696b6e;
+    
+}
+.name h3{
+    margin-left: 30px;
+}
+.vl {
+    border-left: 2px solid black;
+    margin-left: 20px;
+    height: 300px;
+  }
+.about hr{
+    border: 2px solid black;
+  }
+  .dev p {
+    font-size: 16px;
+  }
