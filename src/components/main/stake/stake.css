@@ -1,6 +1,6 @@
 @font-face{
     font-family: "montserrat-Medium";
-    src: url(../assets/fonts/Montserrat-Medium.ttf);
+    src: url(../../../assets/fonts/Montserrat-Medium.ttf);
 }
 *{
     margin:0px;
@@ -9,7 +9,6 @@
     font-family: "montserrat-Medium";
     font-weight: bold;
 }
-
 .hold{
     background-color: rgb(240, 232, 233);
 }
@@ -165,4 +164,6 @@
     transition: all .5s;
     border: 2px solid transparent;
     margin-left: 50px;
+}
+@media (max-width: 480px) {
 }

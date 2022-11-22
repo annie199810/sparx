@@ -6,7 +6,6 @@ const Motto=()=>{
         <div className="container">
              <h1>Our Motto</h1>
             <div className="our">
-            
             <div className="con">
                 <p>
             We provide end-to-end development of web and mobile apps in <br/>integration 

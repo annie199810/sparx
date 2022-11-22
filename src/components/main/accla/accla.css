@@ -1,6 +1,6 @@
 @font-face{
     font-family: "montserrat-Medium";
-    src: url(../assets/fonts/Montserrat-Medium.ttf);
+    src: url(../../../assets/fonts/Montserrat-Medium.ttf);
 }
 *{
     margin:0px;
@@ -16,6 +16,7 @@
     padding: 10px 10px 10px; 
     margin-left:40px;
     margin-bottom: 70px;
+    margin-top: 40%;
 }
 .text_card{
     width: 300px;
@@ -43,6 +44,7 @@
   }
   .app p {
     font-size: 18px;
+    font-family: "grold";
     font-weight: 500;
   }
   .hii h1{
