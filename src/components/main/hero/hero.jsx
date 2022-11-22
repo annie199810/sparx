@@ -1,11 +1,12 @@
 import React from "react";
-import "./hero.css";
+import "./hero.css"
+
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-const Hero =()=>{
 
+const Hero =()=>{
     const settings = {
         dots: true,
         infinite: true,
@@ -18,10 +19,7 @@ const Hero =()=>{
     return (
        
         <div className="text">
-          
-           <div className="text1">
-
-                      
+           <div className="text1">   
 <hr></hr>
             <h1>We Ideate,
                 <br/>Innovate,Create <br/></h1>
@@ -60,9 +58,15 @@ const Hero =()=>{
         </Slider>
         </div>
       </div>
+      <div className="all">
+    <img src="https://www.sparxitsolutions.com/assets-style/images/sparx-banner.png"
+        alt=""
+       width="100%"
+       />
+    </div>
       
            </div>
       
     );
-}
+    }
 export default Hero;

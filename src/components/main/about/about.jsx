@@ -1,6 +1,6 @@
 import React from "react";
 import "./about.css"
-import don from "../../assets/images/brandon.jpg";
+import don from "../../../assets/images/brandon.jpg"
 const About=()=>{
     return(
 <div className="about">

@@ -1,6 +1,6 @@
 @font-face{
     font-family: "montserrat-Medium";
-    src: url(../assets/fonts/Montserrat-Medium.ttf);
+    src: url(../../../assets/fonts/Montserrat-Medium.ttf);
 }
 *{
     margin:0px;
@@ -22,9 +22,10 @@
     margin-left: 60px;
 }
 .grid{
-    display: grid;
-    grid-template-columns: auto auto auto;
-    gap: 10px;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 50px;
     padding:60px;
     
 }
@@ -163,4 +164,6 @@
     transition: all .5s;
     border: 2px solid transparent;
     margin-left: 50px;
+}
+@media (max-width: 480px) {
 }
