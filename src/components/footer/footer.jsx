@@ -7,7 +7,7 @@ const Footer = () => {
         <div className="feature">
           <h1>Featured IN</h1>
         </div>
-        <div className="box1">
+        <div className="guardian">
           <img
             src="https://www.sparxitsolutions.com/assets-style/images/guardian.svg"
             alt=""
@@ -15,7 +15,7 @@ const Footer = () => {
             height="48"
           ></img>
         </div>
-        <div className="box2">
+        <div className="forbes">
           <img
             src="https://www.sparxitsolutions.com/assets-style/images/forbes.svg"
             alt=""
@@ -23,7 +23,7 @@ const Footer = () => {
             height="50px"
           ></img>
         </div>
-        <div className="box3">
+        <div className="telegraph">
           <img
             src="https://www.sparxitsolutions.com/assets-style/images/telegraph.svg"
             alt=""
