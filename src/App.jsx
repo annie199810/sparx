@@ -1,4 +1,5 @@
 import React from "react";
+import Header from "./components/main/header/header";
 import Hero from "./components/main/hero/hero";
 import Accla from "./components/main/accla/accla";
 import Motto from "./components/main/motto/motto";
@@ -13,6 +14,7 @@ import Box from "./components/main/box/box";
 function App() {
   return (
     <div>
+      <Header />
       <Hero />
       <Accla />
       <Motto />
