@@ -19,6 +19,7 @@ const Hero =()=>{
     return (
        
         <div className="text">
+          <div className="te">
            <div className="text1">   
 <hr></hr>
             <h1>We Ideate,
@@ -58,14 +59,18 @@ const Hero =()=>{
         </Slider>
         </div>
       </div>
-      <div className="all">
-    <img src="https://www.sparxitsolutions.com/assets-style/images/sparx-banner.png"
-        alt=""
-       width="100%"
-       />
-    </div>
+     
       
+        </div>
+        
+      <div className="all">
+        <img src="https://www.sparxitsolutions.com/assets-style/images/sparx-banner.png"
+            alt=""
+           width="100%"
+           />
+        </div>
            </div>
+           
       
     );
     }

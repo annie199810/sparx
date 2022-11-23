@@ -11,22 +11,21 @@
 }
 .container{
     display:flex;
-    flex-direction: row;
+    grid-template-columns: auto auto  auto;
     flex-wrap: wrap;
     background-color:lightgrey;
-
+    
 }
 .container h1 {
     margin-top: 30px;
     font-weight:bold;
-    margin-left: 30px ;
+    margin-left: 20px ;
 }
 .our{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+   display: grid;
+   grid-template-columns: auto auto auto ;
     color: #14151b;
-    height: 100px;
+    
     gap: 50px;
 }
 .con p {
@@ -42,14 +41,36 @@
     flex-direction:column;
     flex-wrap: wrap;
 }
-.let p {
+.you p {
     margin-left: 30px;
     margin-top: 20px;
 }
-.let h1{
-    margin-top: 60px;
+.you h1{
+    margin-top: 10px;
 }
-.us p {
-    gap: 50px;
+.as a {
+    color:#e01321;
+}
+.as a:hover{
+    color: #e01321;
+}
+.as ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 10px;
+}
+
+@media (max-width:480px) {
     
+   .our{
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+   }
+   .container{
+    display: grid;
+    grid-template-columns: auto;
+   }
 }

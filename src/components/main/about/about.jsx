@@ -6,6 +6,7 @@ const About=()=>{
 <div className="about">
 <h1>What People Say About Us</h1>
     <div className="us">
+    
         <div className="name">
         <img className="img" src={don} alt="" />
         <h2>Brandon-J.-Murray</h2>
@@ -15,9 +16,9 @@ const About=()=>{
             The time I started<br/> facing problem, I thought to hire an expert. I must say<br/> that you guys worked wonders.
              You hard work and <br/>dedication made me work with you for more three<br/> projects. 
             Your expertise, hard work and custom-script<br/> are worth-appreciating.
-            <button></button></p>
+           
+ </p>   
 
-            
 <div className="vl"></div>
 <div className="dev">
     <p>We are our customers’ <br/>favourite which makes us a <br/>best-rated solutions provider.</p>
