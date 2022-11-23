@@ -15,18 +15,18 @@
 .hold h1{
     font-size: 40px;
     font-weight: bolder;
-    margin-left: 60px;
+    margin-left: 30px;
 }
 .hold p {
     font-size: 20px;
-    margin-left: 60px;
+    margin-left: 30px;
 }
 .grid{
     display:flex;
     flex-direction: row;
     flex-wrap: wrap;
     gap: 50px;
-    padding:60px;
+    padding:40px;
     
 }
 .i1{

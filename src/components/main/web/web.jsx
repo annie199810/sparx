@@ -13,9 +13,10 @@ Businesses With Our Solutions</h1>
         <div className="mob1 ">
             <div className="back">
                 <div className="overlay">
-                    <h4><button></button>Web Design <br/><br/><button></button>eCommerce Website Design
-                    <br/><br/><button></button>Logo Design<br/><br/><button></button>Corporate Website Design
-                    <br/><br/><button></button>B2B Website Design
+                    <h4><a href="#">Web Design</a><br/><br/><a href="#">eCommerce Website Design</a><br/>
+                    <br/><a href="#">Logo Design</a><br/><br/>
+                    <a href="#">Corporate Website Design</a><br/><br/><a href="#">B2B Website Design</a>
+                    
                     </h4>
  
  </div></div>
@@ -27,22 +28,22 @@ Businesses With Our Solutions</h1>
         </div>
         <div className="mob3 "> 
         <div className="over">
-                    <h4><button></button>Android App Development<br/><br/><button></button>iOS App Development
-                    <br/><br/><button></button>Hybrid App Development<br/><br/><button></button>
-                    React Native App Development<br/><br/><button></button>Flutter App Development
-                    <br/><br/><button></button>Web Development<br/><br/><button></button>Java Development
-                    <br/><br/><button></button>.NET Development<br/><br/><button></button>Python Development
-                    <br/><br/><button></button>PHP Development
+                    <h4><a href="#">Mobile App Development</a><br/><br/><a href="#">Android App Development</a><br/><br/>
+                    <a href="#">iOS App Development</a><br/><br/><a href="#">Hybrid App Development</a><br/><br/>
+                    <a href="#">React Native App Development</a><br/><br/>
+                    <a href="#">Flutter App Development</a><br/><br/><a href="#">Web Development</a><br/><br/>
+                    <a href="#">Java Development</a><br/><br/><a href="#">.NET Development</a><br/><br/>
+                    <a href="#">Python Development</a><br/><br/><a href="#">PHP Development</a>
+                
                     </h4>
  </div>
   </div></div>
   <div className="lay">
         <div className="mob4 ">
         <div className="overlay">
-                    <h4><button></button>Blockchain Development<br/><br/><button></button>Enterprise Blockchain Development
-                    <br/><br/><button></button>Cryptocurrency Wallet Development<br/><br/><button></button>
-                    NFT Marketplace Development
-                    <br/><br/><button></button>Smart Contracts Development
+                    <h4><a href="">Blockchain Development</a><br/><br/><a href="">Enterprise Blockchain Development</a><br/>
+    <br/><a href="">Cryptocurrency Wallet Development</a><br/><br/><a href="">NFT Marketplace Development</a><br/><br/>
+                    <a href="">Smart Contracts Development</a>
                     </h4>
  
  </div>
@@ -50,20 +51,17 @@ Businesses With Our Solutions</h1>
         </div>
         <div className="mob5 ">
         <div className="overlay">
-                    <h4><button></button>Salesforce<br/><br/><button></button>AWS
-                    <br/><br/><button></button>Azure<br/><br/><button></button>
-                    Google Cloud
+                    <h4><a href="#">Salesforce</a><br/><br/><a href="#">AWS</a><br/><br/>
+                    <a href="#">Azure</a><br/><br/><a href="#">Google Cloud</a>
                     </h4>
  
  </div>
         </div>
         <div className="mob6 ">
         <div className="overlay">
-                    <h4><button></button>WooCommerce Development<br/><br/><button></button>Magento Development
-                    <br/><br/><button></button>eCommerce App Development<br/><br/><button></button>B2B eCommerce
-                    <br/><br/><button></button>WordPress Development<br/><br/><button></button>
-Shopify Development
-                    
+                    <h4><a href="#">WooCommerce Development</a><br/><br/><a href="#">Magento Development</a><br/><br/>
+                    <a href="#">eCommerce App Development</a><br/><br/><a href="#">B2B eCommerce</a><br/><br/>
+                    <a href="#">WordPress Development</a><br/><br/><a href="#">.Shopify Development</a>
                     </h4>
  
  </div>
